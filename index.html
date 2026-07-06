@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동백꽃 이어쓰기 창작 도우미</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+        .novel-font {
+            font-family: 'Gowun Batang', serif;
+        }
+        /* 동백꽃(생강나무 꽃 - 노란색) 테마 색상 정의 */
+        .theme-yellow-light { background-color: #fefbeb; }
+        .theme-yellow { background-color: #fde047; }
+        .theme-yellow-dark { background-color: #eab308; }
+        .theme-green { background-color: #15803d; }
+        .theme-green-light { background-color: #f0fdf4; }
+    </style>
+</head>
+<body class="bg-amber-50/40 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white py-6 px-4 shadow-md text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-sm bg-yellow-300 text-amber-900 px-3 py-1 rounded-full font-bold uppercase tracking-wider">중학교 2학년 국어 활동</span>
+            <h1 class="text-3xl md:text-4xl font-extrabold mt-2 novel-font tracking-wide">점순이와 나의 뒷이야기, <span class="text-yellow-100">동백꽃 이어쓰기</span></h1>
+            <p class="text-sm md:text-base mt-2 opacity-90">노란 동백꽃 속으로 함께 쓰러진 그 날 이후, 두 사람에겐 어떤 일이 일어났을까요?</p>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-5xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left Side: 소설 결말 다시 읽기 (4 cols on lg) -->
+        <section class="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-amber-100 p-5 flex flex-col">
+            <div class="flex items-center gap-2 mb-4 border-b border-amber-100 pb-3">
+                <span class="text-2xl">📖</span>
+                <h2 class="text-lg font-bold text-amber-900 novel-font">《동백꽃》 결말 다시 읽기</h2>
+            </div>
+            
+            <!-- 소설 결말 본문 -->
+            <div class="bg-amber-50/50 p-4 rounded-xl border border-amber-100/60 overflow-y-auto text-gray-700 leading-relaxed text-sm md:text-base novel-font flex-grow space-y-3" style="max-height: 480px;">
+                <p>......</p>
+                <p>"그럼 너 이다음부턴 안 그럴 테냐?"</p>
+                <p>하고 물을 때에야 비로소 살 길을 찾은 듯싶었다. 나는 눈물을 우선 씻고 뭘 안 그러는지 명색도 모르건만,</p>
+                <p>"그래!"</p>
+                <p>하고 무턱대고 대답하였다.</p>
+                <p>"놈, 대답두 잘 한다!"</p>
+                <p>점순이가 요렇게 고소하게 속삭이듯이 말하고는, 갑자기 제 팔로 나의 목을 바싹 안는 바람에, 나는 그만 기운이 탁 꺾이어 그대로 퍽 쓰러졌다.</p>
+                <p>그 바람에 한창 피어 퍼드러진 노란 동백꽃 속으로 폭 파묻혀 버렸다.</p>
+                <p>알싸한 그리고 향긋한 그 냄새에 나는 땅이 꺼지는 듯이 온 정신이 모두 그만 아찔하였다.</p>
+                <p>"너 말 마라."</p>
+                <p>"그래!"</p>
+                <p>조금 있더니 점순이가 겁을 잔뜩 집어먹고 꽃 밑으로 살금살금 기어서 산 아래로 내려가고, 나는 바위를 끼고 돌아서 밭머리로 겨우 빠져나왔다.</p>
+                <p>마침 산 위에서 "점순아! 점순아! 어딜 갔니?" 하고 점순이 어머니가 역정스럽게 부르는 소리가 난다.</p>
+                <p>점순이는 산을 내려가고 나는 산 위로 도망질을 쳤다.</p>
+                <p>......</p>
+            </div>
+            
+            <div class="mt-4 bg-yellow-50 p-3 rounded-lg border border-yellow-200 text-xs text-amber-800">
+                <i class="fa-solid fa-circle-info mr-1"></i>
+                소설 속 '노란 동백꽃'은 가을에 빨갛게 피는 동백꽃이 아니라, 봄에 노란 꽃을 피우는 강원도 사투리의 <strong>'생강나무 꽃'</strong>을 뜻합니다. 알싸하고 향긋한 향기를 상상해 보세요!
+            </div>
+        </section>
+
+        <!-- Right Side: 학생 입력창 및 AI 상상력 자극 결과 (7 cols on lg) -->
+        <section class="lg:col-span-7 flex flex-col gap-6">
+            
+            <!-- Step 1: 학생 아이디어 입력 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-amber-100 p-5">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="bg-yellow-400 text-amber-950 font-bold w-6 h-6 rounded-full flex items-center justify-center text-xs">1</span>
+                    <h2 class="text-lg font-bold text-gray-800">나의 이어쓰기 아이디어 한 줄 구상</h2>
+                </div>
+                <p class="text-sm text-gray-500 mb-4">
+                    결말 이후에 어떤 방향으로 이야기가 이어지면 좋을지 아주 간단한 생각이라도 적어보세요. (예: "점순이와 내가 다음 날 만나서 닭싸움 대신 산나물을 같이 캐러 간다", "점순이 어머니한테 꽃밭에 누워있던 걸 들켜서 혼난다" 등)
+                </p>
+                
+                <textarea id="userIdea" rows="3" 
+                    class="w-full border-2 border-amber-100 rounded-xl p-3 focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 outline-none text-gray-700 text-sm md:text-base transition duration-200" 
+                    placeholder="이곳에 점순이와 나의 뒷이야기에 대한 여러분의 재미있는 상상을 적어보세요... (최소 10자 이상)"></textarea>
+                
+                <div class="mt-3 flex justify-between items-center">
+                    <span id="charCount" class="text-xs text-gray-400">0자 입력됨</span>
+                    <button id="btnGenerate" onclick="generateInspiration()" 
+                        class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-6 py-2.5 rounded-xl shadow-md transition duration-200 flex items-center gap-2 text-sm md:text-base disabled:opacity-50">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        AI 상상력 발전기 가동하기
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: AI 보조 피드백 (질문 3개 + 키워드) -->
+            <div class="bg-white rounded-2xl shadow-sm border border-amber-100 p-5 flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-4 border-b border-amber-100 pb-3">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-emerald-600 text-white font-bold w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span>
+                        <h2 class="text-lg font-bold text-gray-800">상상력을 키우는 AI의 보물 보따리</h2>
+                    </div>
+                    <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-1 rounded-md font-semibold">창작 도우미</span>
+                </div>
+
+                <!-- 로딩 화면 -->
+                <div id="loading" class="hidden my-auto py-12 flex flex-col items-center justify-center text-center">
+                    <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-amber-500 border-t-transparent mb-4"></div>
+                    <p class="text-amber-800 font-bold novel-font text-lg">점순이와 나의 이야기를 토대로 생각의 씨앗을 뿌리는 중...</p>
+                    <p class="text-xs text-gray-400 mt-1">인공지능이 멋진 질문과 낱말을 고르고 있어요.</p>
+                </div>
+
+                <!-- 초기 대기 화면 -->
+                <div id="placeholder" class="my-auto py-12 text-center text-gray-400">
+                    <i class="fa-solid fa-lightbulb text-5xl text-yellow-300 mb-3 animate-bounce"></i>
+                    <p class="font-medium">위의 빈칸에 아이디어를 입력하고 버튼을 누르면,</p>
+                    <p class="text-sm mt-1">상상력을 불어넣어 줄 질문 3가지와 마법의 키워드가 여기에 나타나요!</p>
+                </div>
+
+                <!-- 에러 화면 -->
+                <div id="errorMessage" class="hidden my-auto p-4 bg-red-50 border border-red-200 rounded-xl text-center">
+                    <i class="fa-solid fa-triangle-exclamation text-red-500 text-3xl mb-2"></i>
+                    <h3 class="font-bold text-red-800 mb-1">앗! 생각의 꽃을 피우지 못했어요</h3>
+                    <p class="text-xs text-red-600" id="errorDetail">잠시 후 다시 시도해 주거나, 아이디어를 조금 더 자세히 적어보세요.</p>
+                </div>
+
+                <!-- 결과 출력부 -->
+                <div id="resultArea" class="hidden flex-grow flex flex-col gap-5">
+                    <!-- 질문 3가지 -->
+                    <div>
+                        <h3 class="text-sm font-extrabold text-emerald-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                            <i class="fa-solid fa-circle-question text-emerald-600"></i>
+                            상상을 돕는 질문 3가지
+                        </h3>
+                        <div class="space-y-2.5">
+                            <div class="bg-emerald-50/50 border-l-4 border-emerald-500 p-3 rounded-r-lg">
+                                <p id="q1" class="text-sm md:text-base text-gray-700 font-medium leading-relaxed"></p>
+                            </div>
+                            <div class="bg-emerald-50/50 border-l-4 border-emerald-500 p-3 rounded-r-lg">
+                                <p id="q2" class="text-sm md:text-base text-gray-700 font-medium leading-relaxed"></p>
+                            </div>
+                            <div class="bg-emerald-50/50 border-l-4 border-emerald-500 p-3 rounded-r-lg">
+                                <p id="q3" class="text-sm md:text-base text-gray-700 font-medium leading-relaxed"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 키워드 5~7개 -->
+                    <div>
+                        <h3 class="text-sm font-extrabold text-amber-800 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                            <i class="fa-solid fa-tags text-amber-600"></i>
+                            글쓰기에 사용할 핵심 낱말 (5~7개)
+                        </h3>
+                        <div id="keywordContainer" class="flex flex-wrap gap-2 pt-1">
+                            <!-- 키워드 배지들이 여기에 동적으로 삽입됨 -->
+                        </div>
+                    </div>
+
+                    <!-- 학생 가이드라인 -->
+                    <div class="mt-auto bg-amber-50 p-3.5 rounded-xl border border-amber-100 text-xs md:text-sm text-amber-900 leading-relaxed">
+                        <span class="font-bold block mb-1">✍️ 자, 이제 연필을 쥐고 써볼까요?</span>
+                        AI가 준 질문들에 머릿속으로 대답해 보면서, 제안된 낱말들을 요리조리 섞어 나만의 이야기 결말을 원고지나 노트에 적어내려 가보세요!
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-stone-400 text-xs py-4 text-center border-t border-stone-700">
+        <p>© 2026 동백꽃 이어쓰기 클래스룸. 중학교 2학년 국어 단원 대단원 3. 문학의 눈 - 소설의 재구성 활동 도구</p>
+    </footer>
+
+    <!-- JavaScript & API Setup -->
+    <script>
+        // API 기본 설정
+        const apiKey = ""; // Canvas 환경에서 자동 주입되므로 비워둠.
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'dongbaek-writing';
+
+        // DOM 요소 캐싱
+        const userIdeaInput = document.getElementById('userIdea');
+        const charCountSpan = document.getElementById('charCount');
+        const btnGenerate = document.getElementById('btnGenerate');
+        const placeholder = document.getElementById('placeholder');
+        const loading = document.getElementById('loading');
+        const errorMessage = document.getElementById('errorMessage');
+        const errorDetail = document.getElementById('errorDetail');
+        const resultArea = document.getElementById('resultArea');
+        const q1Text = document.getElementById('q1');
+        const q2Text = document.getElementById('q2');
+        const q3Text = document.getElementById('q3');
+        const keywordContainer = document.getElementById('keywordContainer');
+
+        // 글자 수 세기 이벤트
+        userIdeaInput.addEventListener('input', () => {
+            const count = userIdeaInput.value.length;
+            charCountSpan.textContent = `${count}자 입력됨`;
+            if (count >= 10) {
+                btnGenerate.classList.remove('opacity-50');
+            } else {
+                btnGenerate.classList.add('opacity-50');
+            }
+        });
+
+        // 지수 백오프 방식의 에러 처리와 함께 API 요청 함수 정의
+        async function fetchGeminiInspiration(prompt, systemInstruction, retries = 5, delay = 1000) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            const payload = {
+                contents: [{ parts: [{ text: prompt }] }],
+                systemInstruction: { parts: [{ text: systemInstruction }] },
+                generationConfig: { 
+                    responseMimeType: "application/json",
+                    responseSchema: {
+                        type: "OBJECT",
+                        properties: {
+                            questions: {
+                                type: "ARRAY",
+                                items: { type: "STRING" },
+                                description: "학생들의 이어쓰기 상상력을 더욱 키워주고 구체적인 묘사를 유도할 수 있는 질문 3가지"
+                            },
+                            keywords: {
+                                type: "ARRAY",
+                                items: { type: "STRING" },
+                                description: "학생들이 글쓰기에 적극 활용하여 소설의 향토적이고 서정적인 분위기를 낼 수 있는 키워드 5개에서 7개"
+                            }
+                        },
+                        required: ["questions", "keywords"]
+                    }
+                }
+            };
+
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`서버 응답 오류 (상태코드: ${response.status})`);
+                    }
+
+                    const data = await response.json();
+                    return data;
+                } catch (error) {
+                    if (i === retries - 1) throw error; // 마지막 재시도도 실패하면 에러를 밖으로 던짐
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2; // 지수 백오프
+                }
+            }
+        }
+
+        // 메인 실행 함수
+        async function generateInspiration() {
+            const idea = userIdeaInput.value.trim();
+
+            if (idea.length < 10) {
+                alert("아이디어를 최소 10글자 이상 입력해 주세요. 예를 들어, '뒷산에서 점순이와 다시 만나서 이야기꽃을 피운다'처럼 입력할 수 있어요!");
+                return;
+            }
+
+            // UI 변경 (로딩 중 상태로)
+            placeholder.classList.add('hidden');
+            resultArea.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            loading.classList.remove('hidden');
+            btnGenerate.disabled = true;
+
+            // 중학교 2학년 대상의 친절하고 상상력을 자극하는 가이드 프롬프트 설정
+            const systemPrompt = `
+                너는 중학교 2학년 학생들이 김유정의 소설 《동백꽃》의 결말 이후 이야기를 이어쓰기(소설 창작)할 때 도움을 주는 국어 교육용 인공지능 도우미다.
+                절대로 완성된 소설 내용이나 문장을 직접 대신 써 주어서는 안 된다. 학생들의 주체적인 창의성을 기르는 것이 목적이다.
+                대신, 학생이 제공한 소박한 아이디어에 덧붙여 상상력과 서사 전개의 디테일을 살릴 수 있는 '질문 3가지'와, 소설 분위기(향토적이고 서사적인 분위기)에 맞는 '키워드 5~7개'를 생성해야 한다.
+
+                질문 가이드라인:
+                1. 첫 번째 질문은 인물의 감정 상태나 행동의 동기에 대해 묻는 질문이어야 한다.
+                2. 두 번째 질문은 주변 환경, 날씨, 배경 등의 구체적 묘사를 자극하는 질문이어야 한다.
+                3. 세 번째 질문은 이야기의 갈등 해결 방식이나 반전 요소 등 극적인 진행을 촉발하는 질문이어야 한다.
+                4. 중학교 2학년 눈높이에 맞춰 친근하고 격려하는 말투(예: "~한다면 점순이의 마음은 어떨까요?", "~은 어떤 모습일지 눈앞에 그려볼까요?")를 사용해라.
+
+                키워드 가이드라인:
+                1. 원작 《동백꽃》의 토속적이고 순박한 정서(강원도 사투리, 시골 배경의 자연물 등)를 고려한 시적이고 향토적인 어휘들을 제공해야 한다.
+                2. 학생의 아이디어 테마에 부합하는 적절한 명사, 의성어, 의태어를 골고루 5~7개 포함하여 제공해야 한다.
+
+                반드시 JSON 형식으로만 응답해라.
+            `;
+
+            const userPrompt = `학생이 입력한 이어쓰기 아이디어: "${idea}"`;
+
+            try {
+                const responseData = await fetchGeminiInspiration(userPrompt, systemPrompt);
+                
+                // JSON 파싱
+                const resultText = responseData.candidates?.[0]?.content?.parts?.[0]?.text;
+                if (!resultText) {
+                    throw new Error("결과 텍스트를 불러오지 못했습니다.");
+                }
+
+                const parsedData = JSON.parse(resultText);
+
+                // 결과 화면 채우기
+                if (parsedData.questions && parsedData.questions.length >= 3) {
+                    q1Text.textContent = `Q1. ${parsedData.questions[0]}`;
+                    q2Text.textContent = `Q2. ${parsedData.questions[1]}`;
+                    q3Text.textContent = `Q3. ${parsedData.questions[2]}`;
+                } else {
+                    throw new Error("질문 3가지를 생성하는 데 문제가 발생했습니다.");
+                }
+
+                // 키워드 배지 채우기
+                keywordContainer.innerHTML = '';
+                if (parsedData.keywords && parsedData.keywords.length > 0) {
+                    parsedData.keywords.forEach((word, idx) => {
+                        const colors = [
+                            'bg-amber-100 text-amber-800 border-amber-200',
+                            'bg-yellow-100 text-yellow-800 border-yellow-200',
+                            'bg-emerald-100 text-emerald-800 border-emerald-200',
+                            'bg-lime-100 text-lime-800 border-lime-200',
+                            'bg-orange-100 text-orange-800 border-orange-200'
+                        ];
+                        const colorClass = colors[idx % colors.length];
+                        
+                        const badge = document.createElement('span');
+                        badge.className = `inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-semibold border ${colorClass} shadow-sm`;
+                        badge.innerHTML = `<i class="fa-solid fa-feather-pointed text-xs"></i> ${word}`;
+                        keywordContainer.appendChild(badge);
+                    });
+                } else {
+                    throw new Error("키워드를 생성하는 데 문제가 발생했습니다.");
+                }
+
+                // 화면 보이기
+                loading.classList.add('hidden');
+                resultArea.classList.remove('hidden');
+
+            } catch (err) {
+                console.error(err);
+                errorDetail.textContent = err.message || "연결 상태가 좋지 않거나 일시적인 인공지능 서버 통신 오류입니다.";
+                loading.classList.add('hidden');
+                errorMessage.classList.remove('hidden');
+            } finally {
+                btnGenerate.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
